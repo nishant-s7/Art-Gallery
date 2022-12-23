@@ -1,39 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
+:root {
+    --main-bg-color: #141414;
+}
+
 * {
     margin: 0;
     padding: 0;
 }
 
 header {
-    height: 70px;
-    background-color: #ffc5ff;
+    height: 100px;
+    background-color: var(--main-bg-color);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-body {
-    background-color: grey;
+hr {
+    border: 4px solid #2f2f2f;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 5px;
 }
 
-.logo img {
-    height: 75px;
+body {
+    background-color: var(--main-bg-color);
 }
 
 header h1 {
     font-family: 'Varela Round', sans-serif;
-    color: #fa79fe;
+    color: white;
 }
 
 .wrapper {
     display: grid;
     width: 91vw;
     min-height: 160vw;
-    margin: 5vw auto;
+    margin: 4vw auto;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    background-color: gray;
+    background-color: var(--main-bg-color);
     border-radius: 5px;
     gap: 5vw;
 }
@@ -44,84 +51,31 @@ header h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.box1{
-    background-image: url("/src/NEON\ MOCKUP\ SQUARED.jpg");
-    background-size: cover;
-    background-position: center;
-}
-
-.box2{
-    grid-column: 2 / 4;
-    background-image: url("/src/ANNIVERSARY.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.box3{
-    background-image: url("/src/WINNERS.png");
-    background-size: cover;
-    background-position: center;
-}
-
-.box4{
-    background-image: url("/src/NEVER.png");
-    background-size: cover;
-    background-position: center;
-}
-
-.box5{
-    background-image: url("/src/FAIL.png");
-    background-size: cover;
-    background-position: center;
-}
-
-.box6 {
-    grid-column: 1 / 3;
-    grid-row: 3 / 5;
-    background-image: url("/src/ISOMETRIC\ CITY.jpg");
-    background-size: cover;
-    background-position: center;
-}
-
-.box7 {
-    background-image: url("/src/316\ DAY\ 2020.jpg");
-    background-size: cover;
-    background-position: center;
-}
-
-.box8 {
-    grid-row: 4 / 6;
-    background-image: url("/src/HELP\ AUSTRAILIA.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.box9 {
-    background-image: url("/src/LINE\ ART.jpg");
-    background-size: cover;
-    background-position: center;
-}
-
-.box10 {
-    background-image: url("/src/TIGER\ WORD\ ART.jpg");
-    background-size: cover;
-    background-position: center;
+    /* box-shadow: rgb(126, 126, 126) 0px 5px 15px; */
 }
 
 footer {
     height: 70px;
-    background-color: #ffc5ff;
+    background-color: var(--main-bg-color);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-footer a {
+/* footer a {
     font-family: 'Varela Round', sans-serif;
-    color: #fa79fe;
+    color: white;
     font-size: 20px;
+    padding: 10px;
+} */
+
+footer p {
+    font-family: 'Varela Round', sans-serif;
+    color: white;
+    font-size: 20px;
+}
+
+footer p a {
+    color: white;
+    text-decoration: none;
 }
